@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span><span></span><span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"><span data-ka="მთავარი">მთავარი</span><span data-en="Home">Home</span></a></li>
+                <li><a href="about.html"><span data-ka="ჩემ შესახებ">ჩემ შესახებ</span><span data-en="About Me">About Me</span></a></li>
+                <li><a href="services.html"><span data-ka="ჩემთან მუშაობა">ჩემთან მუშაობა</span><span data-en="Work With Me">Work With Me</span></a></li>
+                <li><a href="programs.html"><span data-ka="პროგრამები">პროგრამები</span><span data-en="Programs">Programs</span></a></li>
+                <li><a href="blog.html"><span data-ka="ბლოგი">ბლოგი</span><span data-en="Blog">Blog</span></a></li>
+                <li><a href="media.html"><span data-ka="მედია">მედია</span><span data-en="Media">Media</span></a></li>
+                <li><a href="contact.html"><span data-ka="კონტაქტი">კონტაქტი</span><span data-en="Contact">Contact</span></a></li>
+                <li><a href="contact.html" class="btn-book"><span data-ka="ჩაწერა">ჩაწერა</span><span data-en="Book Now">Book Now</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section style="padding: 80px 20px; max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 40px; min-height: 70vh; flex-wrap: wrap-reverse;">
+        <div style="flex: 1; min-width: 300px;">
+            <h1 style="font-size: 3rem; margin-bottom: 10px; font-weight: 700;">
+                <span data-ka="ია ბაშარული">ია ბაშარული</span>
+                <span data-en="Ia Basharuli">Ia Basharuli</span>
+            </h1>
+            <p style="font-size: 1.3rem; color: var(--text-color); margin-bottom: 30px; opacity: 0.9; font-weight: 300; line-height: 1.5;">
+                <span data-ka="პიროვნული ცვლილებების, შინაგანი ძალისა და ახალი შესაძლებლობების სივრცე.">პიროვნული ცვლილებების, შინაგანი ძალისა და ახალი შესაძლებლობების სივრცე.</span>
+                <span data-en="A space for personal transformation, inner strength, and new horizons.">A space for personal transformation, inner strength, and new horizons.</span>
+            </p>
+            <div style="display: flex; gap: 15px;">
+                <a href="services.html" style="background-color: var(--accent-color); color: var(--white); padding: 12px 28px; text-decoration: none; border-radius: 4px; font-weight: 500;">
+                    <span data-ka="ჩემთან მუშაობა">ჩემთან მუშაობა</span><span data-en="Work With Me">Work With Me</span>
+                </a>
+                <a href="programs.html" style="border: 1px solid var(--accent-color); color: var(--accent-color); padding: 12px 28px; text-decoration: none; border-radius: 4px; font-weight: 500;">
+                    <span data-ka="პროგრამების ნახვა">პროგრამების ნახვა</span><span data-en="View Programs">View Programs</span>
+                </a>
+            </div>
+        </div>
+        <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
+            <div style="width: 100%; max-width: 320px; height: 500px; background-color: var(--card-bg); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--accent-color); font-style: italic;">
+                <img src="images/img1.png" alt="Ia Basharuli" style="max-width: 100%; max-height: 100%; border-radius: 8px;">
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <hr class="footer-divider">
+        <div class="footer-container">
+            <div class="footer-left">
+                <ul class="footer-nav">
+                    <li><a href="about.html"><span data-ka="ჩემ შესახებ">ჩემ შესახებ</span><span data-en="About">About</span></a></li>
+                    <li><a href="blog.html"><span data-ka="ბლოგი">ბლოგი</span><span data-en="Online Magazine">Online Magazine</span></a></li>
+                    <li><a href="programs.html"><span data-ka="პროგრამები">პროგრამები</span><span data-en="Programs">Programs</span></a></li>
+                    <li><a href="services.html"><span data-ka="რესურსები">რესურსები</span><span data-en="Resources">Resources</span></a></li>
+                    <li><a href="contact.html"><span data-ka="კონტაქტი">კონტაქტი</span><span data-en="Contact">Contact</span></a></li>
+                    <li>
+                        <button class="lang-btn" onclick="toggleLanguage()">
+                            <span data-ka="🇬🇪 KA / EN">🇬🇪 KA</span>
+                            <span data-en="🇺🇸 EN / KA">🇺🇸 EN</span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon">t</a>
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">in</a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-copyright">
+                    &copy; <a href="#">mindmatters.group</a> 2026
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        function applyLanguage(lang) {
+            document.documentElement.setAttribute('lang', lang);
+            localStorage.setItem('preferredLang', lang);
+        }
+
+        function toggleLanguage() {
+            const currentLang = localStorage.getItem('preferredLang') || 'ka';
+            const nextLang = currentLang === 'ka' ? 'en' : 'ka';
+            applyLanguage(nextLang);
+        }
+
+        applyLanguage(localStorage.getItem('preferredLang') || 'ka');
+    </script>
+</body>
+</html>

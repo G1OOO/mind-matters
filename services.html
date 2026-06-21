@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <div class="logo"><a href="index.html"><img src="logo.png" alt="Logo"></a></div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span><span></span><span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><span data-ka="მთავარი">მთავარი</span><span data-en="Home">Home</span></a></li>
+                <li><a href="about.html"><span data-ka="ჩემ შესახებ">ჩემ შესახებ</span><span data-en="About Me">About Me</span></a></li>
+                <li><a href="services.html" class="active"><span data-ka="ჩემთან მუშაობა">ჩემთან მუშაობა</span><span data-en="Work With Me">Work With Me</span></a></li>
+                <li><a href="programs.html"><span data-ka="პროგრამები">პროგრამები</span><span data-en="Programs">Programs</span></a></li>
+                <li><a href="blog.html"><span data-ka="ბლოგი">ბლოგი</span><span data-en="Blog">Blog</span></a></li>
+                <li><a href="media.html"><span data-ka="მედია">მედია</span><span data-en="Media">Media</span></a></li>
+                <li><a href="contact.html"><span data-ka="კონტაქტი">კონტაქტი</span><span data-en="Contact">Contact</span></a></li>
+                <li><a href="contact.html" class="btn-book"><span data-ka="ჩაწერა">ჩაწერა</span><span data-en="Book Now">Book Now</span></a></li>
+                <li>
+                    <button class="lang-btn" onclick="toggleLanguage()" style="padding: 5px 10px; border: 1px solid rgba(90, 115, 142, 0.2); border-radius: 4px;">
+                        <span data-ka="EN">EN</span><span data-en="KA">KA</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 style="text-align: center; margin-bottom: 50px;"><span data-ka="მომსახურებები">მომსახურებები</span><span data-en="Services">Services</span></h1>
+
+        <section style="margin-bottom: 60px;">
+            <h2 style="border-bottom: 2px solid var(--accent-color); padding-bottom: 10px; margin-bottom: 30px;"><span data-ka="ინდივიდუალური მუშაობა">ინდივიდუალური მუშაობა</span><span data-en="Individual Sessions">Individual Sessions</span></h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                <div style="background-color: var(--white); padding: 25px; border-radius: 6px; border: 1px solid rgba(0,0,0,0.05);">
+                    <h3><span data-ka="ქოუჩ-სესიები">ქოუჩ-სესიები</span><span data-en="Coach Sessions">Coach Sessions</span></h3>
+                    <p style="font-size: 0.9rem; margin: 15px 0; opacity: 0.8;"><span data-ka="ქოუჩ-სესიები">ქოუჩ-სესიები</span><span data-en="Personal development coaching">Personal development coaching</span></p>
+                    <a href="service-single.html" style="color: var(--accent-color); text-decoration: none; font-weight: 500;"><span data-ka="დეტალურად &rarr;">დეტალურად &rarr;</span><span data-en="Details &rarr;">Details &rarr;</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <hr class="footer-divider">
+        <div class="footer-container">
+            <div class="footer-left">
+                <ul class="footer-nav">
+                    <li><a href="about.html"><span data-ka="ჩემ შესახებ">ჩემ შესახებ</span><span data-en="About">About</span></a></li>
+                    <li><a href="blog.html"><span data-ka="ბლოგი">ბლოგი</span><span data-en="Online Magazine">Online Magazine</span></a></li>
+                    <li><a href="programs.html"><span data-ka="პროგრამები">პროგრამები</span><span data-en="Programs">Programs</span></a></li>
+                    <li><a href="services.html"><span data-ka="რესურსები">რესურსები</span><span data-en="Resources">Resources</span></a></li>
+                    <li><a href="contact.html"><span data-ka="კონტაქტი">კონტაქტი</span><span data-en="Contact">Contact</span></a></li>
+                </ul>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon" aria-label="Twitter">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-copyright">
+                    &copy; <a href="#">mindmatters.group</a> 2026
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
